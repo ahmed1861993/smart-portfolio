@@ -1,0 +1,962 @@
+/* 
+==================
+public styles
+==================
+*/
+
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: lucida sans;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+   
+    
+    
+}
+
+
+/* 
+==================
+Navbar styles
+==================
+*/
+
+.navbar {
+    padding: 20px 0;
+    overflow: hidden;
+   border-bottom: 1px solid #000;
+    position: relative;
+    
+}
+.navbar .logo{
+    width: 50%;
+    float: left;
+}
+
+
+}
+.navbar .logo .logo-text{
+    font-size: 30px;
+    line-height: 50px;
+    
+    
+}
+
+.navbar input, .navbar label{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+
+.navbar input{
+    display: none;
+} 
+
+
+ 
+.navbar label{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/navbar/open.png) no-repeat;
+    padding: 20px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.navbar input:checked ~ .links .ul-list{
+     display: block;
+     
+}
+
+.navbar input:checked ~  label{
+     display: block;
+     background: url(../images/navbar/close.png) no-repeat;
+     padding: 20px;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+
+
+.navbar .links .ul-list {
+    width: 50%;
+    float: left;
+    list-style: none;
+   
+}
+
+.navbar .links .ul-list .list-item{
+    list-style: none;
+     display: inline-block;
+   
+   
+    
+}
+
+.navbar .links .ul-list .list-item a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+     line-height: 90px;
+     padding-right: 15px;
+}
+
+.navbar .links .ul-list .list-item a:hover{
+    color:#eb5424;
+}
+.navbar .links .ul-list .list-item a.active{
+    color:#eb5424;
+}
+
+
+/* 
+==================
+Header styles
+==================
+*/
+
+.header{
+    height: 600px;
+    background-image: url(../images/head/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    
+}
+
+.header .header-desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header .header-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+}
+
+.header .header-info{
+    
+      font-size: 30px;
+    font-weight: bold;
+    color: #eb5424;
+    margin-bottom: 20px;
+    
+}
+
+
+.header .header-p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #777;
+    
+}
+.header .header-p span{
+color: #5e5e5e;
+    font-weight: bold;
+}
+
+
+.header .header-desc .btn-desc{
+    
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #eb5424;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header .header-desc .btn-desc:hover{
+     background: #fff;
+     color: #eb5424;
+}
+
+
+ /*  ==========================================================
+                        work styles
+    
+    ==========================================================
+    */
+    
+    .work{
+        height: auto;
+        padding: 50px;
+        background: #fff;
+    }
+
+.work .work-title{
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.work .part{
+    margin-top: 30px;
+    width: 30%;
+    float: left;
+    height: auto;
+    padding: 60px 5px 60px 5px;
+    border: 1px solid #888;
+   margin-left: 2%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.work .container .part .icon{
+    color: #888;
+    margin-bottom: 10%;
+    margin-left:45%;
+    
+}
+
+.work .part .part-title{
+    font-size: 25px;
+    color: #eb5424;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.part .line{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+    
+.work .part .part-p{
+    
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 17px;
+}
+ 
+.clear{
+    clear: both;
+}
+/* 
+====================================
+            Portfolio styles
+====================================
+*/
+
+
+.portfolio{
+    background: #f8f8f8;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.portfolio .portfolio-title{
+    text-align: center;
+    font-size: 35px;
+}
+.portfolio .portfolio-title span{
+    font-weight: normal;
+    color:#5e5e5e; 
+}
+
+.portfolio .portfolio-list{
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+.portfolio .portfolio-list .portfolio-item{
+    display: inline-block;
+     width:100px;
+    padding: 10px;
+    color: #5e5e5e;
+}  
+
+.portfolio .portfolio-list .portfolio-item.active{
+    background: #eb5424;
+    color: #fff;
+}
+
+.portfolio .portfolio-list .portfolio-item a{
+    text-decoration: none;
+}
+
+.box .box-img{
+    width: 24%;
+    float: left;
+    font-size: 0;
+    position: relative;
+}
+
+.box .box-img img{
+    width: 100%;
+}
+.box .box-img .overlay{
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(235,84,36,0.5);
+    color: #fff;
+    opacity: 0;
+}
+
+.box .box-img .overlay span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    background: #fff;
+    padding: 10px 20px;
+    color: #000;
+    cursor: pointer;
+    border: 2px solid #eb5424;
+
+}
+
+.box .box-img:hover .overlay{
+    opacity: 1;
+}
+
+/* 
+====================================
+            Profile & Skills styles
+====================================
+*/
+
+
+/* left Side Profile */
+
+
+.prof-skills{
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.prof-skills .prof{
+    width: 50%;
+    float: left;
+}
+
+.prof-skills .prof .prof-list{
+    list-style: none;
+}
+
+.prof-skills .prof .prof-list .prof-item{
+    margin-bottom: 10px;
+    color: #5e5e5e;
+}
+
+.prof-skills .prof .prof-list .prof-item span{
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    color: #000;
+}
+
+.prof-skills .prof .prof-list .prof-item span.web{
+    font-weight: normal;
+    color: #eb5424;
+}
+
+
+/* Right Side Profile */
+
+.prof-skills .skills{
+     width: 50%;
+     float: left;
+}
+
+.prof-skills .skills .skills-p{
+    font-size: 16px;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+}
+
+.prof-skills .skills .bar{
+   
+    margin-bottom:10px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+
+.prof-skills .skills .bar span.main{
+    float: left;
+}
+
+.prof-skills .skills .bar span.perc{
+    float: right;
+   
+    padding-left: 50px;
+}
+
+.prof-skills .skills .bar .parent{
+    height: 2px;
+    background: #ccc;
+    clear: both;
+    position: relative;
+}
+
+.prof-skills .skills .bar .parent span{
+    background: #eb5424;
+     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+}
+
+.prof-skills .skills .bar .parent span.sp1{
+   
+    width: 100%;
+}
+
+.prof-skills .skills .bar .parent span.sp2{
+   
+    width: 90%;
+}
+
+
+
+.prof-skills .skills .bar .parent span.sp3{
+  
+    width: 80%;
+}
+
+
+
+.prof-skills .skills .bar .parent span.sp4{
+   
+    width: 70%;
+}
+
+
+
+
+
+
+/* Grouping Profile */
+
+.prof-skills .prof .prof-title , .skills .skills-title{
+    font-size: 40px;
+    margin-bottom: 20px;
+} 
+
+.prof-skills .prof .prof-title span , .skills .skills-title span{
+    font-size: 40px;
+    font-weight: normal;
+} 
+
+
+/* 
+====================================
+            Creative section styles
+====================================
+*/
+
+
+.creative{
+    height: 650px;
+    background-image: url(../images/about/about-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.creative .creative-info{
+    padding-top: 50px;
+    width: 50%;
+    float: right;
+    margin-right: 20px;
+}
+
+.creative .creative-info .creative-title{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.creative .creative-info .creative-title span{
+    font-weight: normal;
+    font-size: 46px;
+}
+
+.creative .creative-info .sub-title{
+       margin-bottom: 20px;
+       font-size: 25px;
+    color: #eb5424;
+    font-weight: bold;
+}
+
+.creative .creative-info .sub-title span{
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.creative .creative-info .creative-p{
+    line-height: 1.8;
+    color: #888;
+}
+
+
+
+
+/* 
+====================================
+           Social media
+====================================
+*/
+
+
+.social-media{
+    width: 100%;
+    overflow: hidden;
+}
+
+.social-media .social{
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    padding: 100px 0 100px 60px;
+}
+
+.social-media .social.facebook{
+    background: #3b5998;
+}
+
+
+.social-media .social.twitter{
+     background: #498cbf;
+}
+
+
+
+.social-media .social.pin{
+     background: #cc2127;
+}
+
+.social-media .social.facebook .icon,.social-media .social.twitter .icon,.social-media .social.pin .icon{
+    background: #fff;
+    padding: 2px 2px 2px 2px;
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.social.facebook .icon:hover{
+    color: #3b5998;
+}
+.social.twitter .icon:hover{
+    color: #498cbf;
+}
+.social.pin .icon:hover{
+    color: #cc2127;
+}
+
+
+
+
+
+
+
+
+.social-media .social p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.social-media .social p span{
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.social-media .social p span.second{
+    font-weight: normal;
+}
+
+
+
+
+
+/* 
+====================================
+           Drop section
+====================================
+*/
+
+
+
+
+
+.drop{
+    
+    padding: 50px 0;
+    text-align: center;
+}
+
+.drop .drop-title {
+    font-size: 60px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    
+}
+.drop .drop-title span{
+    font-weight: normal;
+}
+
+.drop form{
+    width: 70%;
+  
+    margin: auto;
+}
+
+
+
+.drop form input{
+    padding: 5px;
+      box-sizing: border-box;
+    outline: 0;
+}
+
+.drop form .form-input{
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+ 
+    
+}
+
+.drop form .form-input input{
+    
+     width: 49%;
+    
+}
+.drop form .form-input input[type=text]{
+   
+    float: left;
+    
+    
+  
+    
+}
+
+.drop form .form-input input[type=email]{
+   
+    float: right;
+     
+}
+
+.drop form input.sub{
+   
+    width:100%;
+    margin-bottom: 10px;
+    
+     
+}
+
+.drop form textarea{
+     display: block;
+    width: 100%;
+     padding-left: 5px;
+    background: #ccc;
+    outline: 0;
+}
+
+.drop form input[type=submit]{
+    width: 60%;
+    background:#fff;
+    border: 1px solid #ccc;
+    height: 25px;
+    margin-top: 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+.drop form input[type=submit]:hover{
+     color: #000;
+}
+
+
+/* 
+====================================
+          footer
+====================================
+*/
+
+.footer{
+    text-align: center;
+   
+}
+
+.footer p{
+     color: #777;
+    margin-bottom: 10px;
+}
+
+
+
+/*
+
+========================================================================================
+
+                                         MEDIA QUERY
+
+======================================================================================== */
+
+
+
+
+
+
+
+
+/* more than tablet screen */
+
+
+@media (min-width:992px){
+    .navbar label{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+/****************** Medium screen*************************/
+
+
+
+@media (max-width:991px){
+    
+    
+.navbar .logo{
+     width:100%;
+     float: none;
+ }  
+
+
+.navbar .links .ul-list  {
+    width: 100%;
+    float: none;
+    list-style: none;
+    margin-top: 50px;
+    display: none;   
+}
+
+
+.navbar .links .ul-list .list-item{
+    list-style: none;
+     display:block;
+        text-align: center;
+     padding-bottom: 10px;     
+}
+    
+    
+.navbar .links .ul-list .list-item a{
+         height: 50px;
+         margin-top: 10px;
+        line-height: 50px;
+}
+    
+    
+.navbar .links .ul-list .list-item a:hover{
+        background: #5e5e5e;
+        color: #fff;
+         height: 50px;
+         margin-top: 10px;
+ }
+    .creative .creative-info{
+        width:100%;
+        float: none;
+        padding-top: 10px;
+         text-align: center;
+    }
+    
+    .social-media .social{
+    width: 100%;
+     float: none;
+    }
+
+}
+    
+
+
+
+
+/****************** Tablet screen*************************/
+
+@media (max-width:768px){
+    .header .header-desc .header-title{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+
+    
+      .header .header-desc .header-info{
+        font-size: 25px;
+    }
+    
+      .header .header-desc .header-p{
+        font-size: 15px;
+          line-height: 1.8;
+    }
+    
+    .work .part{
+        width: 95%;
+    }
+    
+    .work .work-title{
+      font-size: 40px;
+    }
+    
+    .work .part .part-title{
+        font-size:18px;
+    }  
+    
+    
+    
+    
+    .work .part .part-p{
+         font-size:14px;
+   }
+    
+     .box .box-img{
+        width: 48%;
+    }  
+    
+    .prof-skills .prof,.prof-skills .skills {
+    width: 100%;
+        margin-top: 20px;
+    margin-bottom: 20px;
+        
+    }
+    
+   .creative .creative-info{
+        width:100%;
+        float: none;
+        padding-top: 10px;
+       text-align: center;
+    }
+    
+   .social-media .social{
+    width: 100%;
+     float: none;
+    }
+    
+}
+
+/****************** Mobile  screen*************************/
+
+
+@media (max-width:548px){
+    
+    .box .box-img{
+        width: 95%;
+    } 
+    
+    .portfolio .portfolio-list{
+        text-align: center;
+    }
+    
+    .portfolio .portfolio-list .portfolio-item{
+    display: block;
+     width:100px;
+    padding: 2px;
+    color: #5e5e5e;
+   margin:auto;
+} 
+    .prof-skills .prof,.prof-skills .skills {
+    width: 100%;
+    margin-bottom: 10px;
+        text-align: left;
+    }
+    
+    .creative{
+       height: auto;
+    }
+    
+    .creative .creative-info{
+        width:100%;
+        float: none;
+        padding-top: 10px;
+         text-align: center;
+    }
+    
+    
+    
+    .creative .creative-info .creative-title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.creative .creative-info .creative-title span{
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.creative .creative-info .sub-title{
+       margin-bottom: 20px;
+       font-size: 20px;
+    color: #eb5424;
+    font-weight: bold;
+}
+
+.creative .creative-info .sub-title span{
+    font-weight: normal;
+    font-size: 20px;
+}
+   .creative .creative-info .creative-p{
+    line-height: 1.8;
+    color: #555;
+      
+}
+ .social-media .social{
+    width: 100%;
+     float: none;
+    }
+    
+    .drop .drop-title {
+    font-size: 40px;
+    }
+    
+    
+    .drop form .form-input input{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+   
+}
+
+
+
+
+
+
+
+
